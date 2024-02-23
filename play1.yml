@@ -1,0 +1,9 @@
+---
+- name: Install Apache2
+  hosts: machine1
+  become: true
+  tasks:
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
